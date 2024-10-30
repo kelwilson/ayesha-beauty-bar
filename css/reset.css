@@ -1,0 +1,685 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/********************    primary-styles-section   **********************/
+
+* {
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --gray: rgb(201, 201, 201);
+}
+
+/********************    header-section   **********************/
+
+header {
+  background: var(--white);
+  padding: 2%;
+  margin-bottom: 1%;
+}
+
+.logo {
+  float: left;
+  margin-left: 2%;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.nav-bar {
+  float: right;
+  width: 80%;
+}
+
+.nav-bar ul {
+  float: left;
+  width: 80%;
+}
+
+.nav-bar li {
+  float: left;
+  margin-right: 4%;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: var(--black);
+}
+
+.online {
+  float: right;
+  /* width: 15%; */
+  margin-right: 4%;
+}
+
+/********************   hero-section   **********************/
+
+.hero {
+  clear: both;
+  background-image: url(/Saloon_Solutions/img/main-edit.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 900px;
+  padding-top: 10%;
+  padding-left: 7%;
+  color: var(--white);
+}
+
+.hero h1 {
+  font-size: 5em;
+  /* font-weight: bolder; */
+}
+
+.hero span {
+  display: block;
+}
+
+.hero p {
+  font-size: 1.5em;
+}
+
+.hero > span {
+  float: right;
+  /* transform: skew(-45deg); */
+  transform: rotate(90deg);
+  font-size: 1.2em;
+  margin-bottom: 5%;
+}
+
+.hero a,
+.momentum-section a,
+.offer-section a,
+.visit a {
+  display: block;
+  clear: both;
+  text-decoration: none;
+  background: var(--black);
+  padding: 1%;
+  width: 15%;
+  font-size: 1.2em;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 2%;
+}
+/********************    visit-section   **********************/
+
+.visit {
+  width: 20%;
+  height: 250px;
+  background: var(--black);
+  padding: 2%;
+}
+
+.visit span {
+  display: block;
+  margin-bottom: 2%;
+}
+
+.visit h2 > strong {
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.visit h2 {
+  font-size: 1em;
+  line-height: 2;
+  margin-bottom: 7%;
+  width: 100%;
+}
+
+.visit a {
+  padding: 5%;
+  background: var(--white);
+  /* display: block; */
+  width: 70%;
+  color: var(--black);
+}
+
+.hero ul {
+  float: right;
+}
+
+.hero li {
+  float: left;
+  /* width: 50px;
+  height: 50px; */
+  /* text-align: center; */
+  margin: 3%;
+  color: var(--black);
+}
+
+.hero li > i {
+  background: var(--white);
+}
+/********************    expert-section   **********************/
+
+.expert-section {
+  background: var(--white);
+  padding: 7% 15% 0;
+  height: 400px;
+}
+
+.expert-section article {
+  float: left;
+  width: 33.333%;
+  padding: 3%;
+  text-align: center;
+  color: var(--black);
+}
+
+.expert-section h3 {
+  font-size: 1.3em;
+  margin: 5% 0;
+}
+
+/********************    momentum-section   **********************/
+
+.momentum-section {
+  clear: both;
+  padding: 7% 15% 0;
+  background: var(--gray);
+  height: 500px;
+}
+
+.momentum-section div {
+  float: left;
+  width: 45%;
+}
+
+.momentum-section h2,
+.look-book-section h3 {
+  font-size: 3em;
+  margin: 2% 0;
+}
+
+.momentum-section p {
+  margin: 2% 0 4%;
+}
+.momentum-section div > div,
+.visit div {
+  width: 100vw;
+}
+
+.momentum-section .desktop-img {
+  width: 500px;
+  height: 350px;
+  float: right;
+}
+
+.momentum-section .mobile-img {
+  display: none;
+}
+
+/********************    stylist-img-section-section   **********************/
+
+.stylist-img-section {
+  padding: 15%;
+  /* width: 500px; */
+}
+
+.stylist-img-section article {
+  float: left;
+  text-align: center;
+  position: relative;
+  margin-bottom: 15%;
+}
+
+.stylist-img-section article:first-of-type,
+.stylist-img-section article:nth-child(2) {
+  margin-right: 4%;
+}
+
+.stylist-img-section img {
+  width: 300px;
+  height: 400px;
+}
+
+.stylist-img-section div {
+  background: var(--black);
+  padding: 7% 5%;
+  margin: 0 5%;
+  width: 90%;
+  color: var(--white);
+  position: absolute;
+  bottom: -15px;
+}
+
+/********************   offer-section   **********************/
+
+.offer-section {
+  clear: both;
+  padding: 15%;
+  padding-bottom: 0;
+}
+
+.offer-section article {
+  background-image: url(/Saloon_Solutions/img/2nd-bg.jpg);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 7%;
+}
+
+.offer-section span {
+  font-weight: bolder;
+  margin-bottom: 2%;
+}
+
+.offer-section strong {
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.offer-section h3 {
+  font-size: 2em;
+  line-height: 1;
+  margin-bottom: 5%;
+}
+
+.offer-section a {
+  width: 25%;
+}
+
+/********************    look-book-section  **********************/
+
+.look-book-section {
+  padding: 0 15%;
+  height: 1200px;
+}
+
+.look-book-section div {
+  margin: 15%;
+  text-align: center;
+}
+
+.look-book-section hr {
+  margin: 0 47%;
+  background: var(--black);
+  font-weight: bolder;
+}
+
+.look-book-section ul {
+  position: relative;
+  margin-top: 40%;
+}
+
+.look-book-section li {
+  /* float: left; */
+  margin-bottom: 4%;
+  position: absolute;
+}
+
+.look-book-section li:first-of-type {
+  left: 0;
+  bottom: 0;
+  margin-right: 3%;
+}
+
+.look-book-section li:nth-child(2) {
+  bottom: -300px;
+  /* bottom: 0px; */
+  right: 405px;
+}
+
+.look-book-section li:nth-child(3) {
+  right: 10px;
+  bottom: 0;
+}
+
+.look-book-section li:nth-child(4) {
+  left: 0;
+  top: 0;
+  margin-right: 3%;
+}
+
+.look-book-section li:nth-child(5) {
+  right: 405px;
+  top: 300px;
+}
+
+.look-book-section li:last-of-type {
+  right: 10px;
+  top: 0;
+}
+
+.look-book-section img {
+  width: 300px;
+  height: 300px;
+}
+
+.look-book-section .longer {
+  height: 600px;
+}
+
+/********************    @media- Mobile   **********************/
+
+@media all and (max-width: 600px) {
+  .hidden {
+    display: none;
+  }
+
+  header {
+    height: 50px;
+    padding: 3%;
+  }
+
+  .menu {
+    float: left;
+    width: 60%;
+  }
+
+  .menu li {
+    width: 10%;
+    margin: 2%;
+    height: 5px;
+    background: var(--black);
+  }
+
+  .logo {
+    float: right;
+    font-size: 1.6em;
+  }
+
+  .hero {
+    background-image: url(/Saloon_Solutions/mobile-img/mobile-main.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 420px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 10% 0;
+    position: relative;
+  }
+
+  .hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 3%;
+  }
+
+  .hero span + span {
+    display: block;
+    margin: 2%;
+  }
+
+  .hero p {
+    font-size: 1em;
+    line-height: 2;
+  }
+
+  .hero p + span {
+    transform: none;
+    margin: 2%;
+    float: none;
+    margin-bottom: 10%;
+  }
+
+  .hero a,
+  .momentum-section a,
+  .offer-section a {
+    display: inline;
+    padding: 5%;
+    width: 50%;
+    font-size: 1em;
+    margin: 2%;
+  }
+
+  /* *********    visit-section     ******** */
+
+  .visit {
+    position: absolute;
+    bottom: -300px;
+    width: 100%;
+    height: 300px;
+    padding: 10%;
+  }
+
+  .visit a {
+    display: inline;
+    /* margin-right: 5%; */
+    /* margin: 0 5%;
+    width: 50%; */
+  }
+
+  /* ********* expert- section ********* */
+
+  .expert-section {
+    margin-top: 70%;
+    height: 700px;
+  }
+
+  .expert-section article {
+    float: none;
+    width: 100%;
+  }
+
+  /* ***************  momentum- section  ***************** */
+
+  .momentum-section {
+    height: 900px;
+    padding: 5%;
+    text-align: center;
+  }
+
+  .momentum-section div {
+    float: none;
+    width: 100%;
+    margin-bottom: 15%;
+  }
+
+  .momentum-section p {
+    margin-bottom: 10%;
+  }
+
+  .momentum-section .desktop-img {
+    display: none;
+  }
+
+  .momentum-section .mobile-img {
+    display: block;
+    width: 100%;
+    height: 450px;
+  }
+
+  /* ****************   stylist-img- section    ***************** */
+  
+  .stylist-img-section {
+       /* padding: 3%; */
+       width: 100%;
+       margin: 10% 0;
+  }
+  
+  .stylist-img-section article{
+    /* margin-bottom: 70%; */
+    float: none;
+  }
+
+
+
+
+  /* **************  offer- section  *************** */
+
+  .offer-section {
+    padding: 0;
+  }
+
+  .offer-section article {
+    background-image: url(/Saloon_Solutions/mobile-img/pexels-cottonbro-studio-3992862.jpg);
+    text-align: center;
+    margin-bottom: 15%;
+    padding: 15%;
+    color: var(--white);
+  }
+  
+  .offer-section h3 {
+    margin-bottom: 10%;
+
+  }
+
+  .offer-section a {
+    background: var(--white);
+    color: var(--black);
+  }
+
+  /* **************  look-book- section  ************** */
+
+  .look-book-section {
+    padding: 3%;
+    text-align: center;
+    margin-bottom: 20%;
+
+  }
+
+  .look-book-section ul {
+    margin-top: 0;
+  }
+
+  .look-book-section li {
+    position: static;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  .look-book-section img {
+    width: 100%;
+    height: 500px;
+  }
+
+  .look-book-section .longer {
+    height: 500px;
+  }
+}
+
+/********************    testimonial-section   **********************/

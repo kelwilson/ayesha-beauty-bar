@@ -1,0 +1,385 @@
+/* Box Model Hack
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --gray: rgb(194, 7, 7);
+}
+
+/********************    header-section   **********************/
+
+.wrapper {
+  width: 1000px;
+  margin: 0 200px;
+}
+
+header {
+  background: var(--white);
+  padding: 2%;
+}
+
+.logo {
+  /* float: left; */
+  margin-left: 2%;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.nav-bar {
+  /* float: right; */
+  width: 80%;
+}
+
+.nav-bar ul {
+  /* float: left; */
+  width: 80%;
+}
+
+.nav-bar li {
+  /* float: left; */
+  margin-right: 4%;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: var(--black);
+}
+
+.online {
+  /* float: right; */
+  /* width: 15%; */
+  margin-right: 4%;
+}
+
+/********************   hero-section   **********************/
+
+.hero {
+  /* clear: both; */
+  background-image: url(/img/main-1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 900px;
+  padding-top: 10%;
+  padding-left: 7%;
+  color: var(--white);
+}
+
+.hero h1 {
+  font-size: 5em;
+  /* font-weight: bolder; */
+}
+
+.hero p {
+  font-size: 1.5em;
+}
+
+.hero > span {
+  /* float: right; */
+  /* transform: skew(-45deg); */
+  transform: rotate(90deg);
+  font-size: 1.2em;
+  margin-bottom: 5%;
+}
+
+.hero a,
+.momentum-section a,
+.offer-section a {
+  /* display: block; */
+  /* clear: both; */
+  text-decoration: none;
+  background: var(--black);
+  padding: 1.5%;
+  width: 15%;
+  font-size: 1.2em;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 2%;
+}
+/********************    visit-section   **********************/
+
+.visit {
+  width: 20%;
+  height: 250px;
+  background: var(--black);
+  padding: 2%;
+}
+
+.visit span {
+  /* display: block; */
+  margin-bottom: 2%;
+}
+
+.visit h2 > strong {
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.visit h2 {
+  font-size: 1em;
+  line-height: 2;
+  margin-bottom: 7%;
+  width: 100%;
+}
+
+.visit a {
+  /* padding: 7%; */
+  background: var(--white);
+  /* display: block; */
+  /* width: 83%; */
+  color: var(--black);
+}
+
+.hero ul {
+  /* float: right; */
+}
+
+.hero li {
+  /* float: left; */
+  /* width: 50px;
+  height: 50px; */
+  /* text-align: center; */
+  margin: 3%;
+  color: var(--black);
+}
+
+.hero li > i {
+  background: var(--white);
+}
+/********************    expert-section   **********************/
+
+.expert-section {
+  background: var(--white);
+  padding: 7% 15% 0;
+  height: 400px;
+}
+
+.expert-section article {
+  float: left;
+  width: 33.333%;
+  padding: 3%;
+  text-align: center;
+  color: var(--black);
+}
+
+.expert-section h3 {
+  font-size: 1.3em;
+  margin: 5% 0;
+}
+
+/********************    momentum-section   **********************/
+
+.momentum-section {
+  clear: both;
+  padding: 7% 15% 0;
+  background: var(--gray);
+  height: 500px;
+}
+
+.momentum-section div {
+  float: left;
+  width: 45%;
+}
+
+.momentum-section h2,
+.look-book-section h3 {
+  font-size: 3em;
+  margin: 2% 0;
+}
+
+.momentum-section p {
+  margin: 2% 0 4%;
+}
+.momentum-section div > div,
+.visit div {
+  width: 100vw;
+}
+
+.momentum-section img {
+  width: 500px;
+  height: 350px;
+  float: right;
+}
+
+/********************    stylist-img-section-section   **********************/
+
+.stylist-img-section {
+  padding: 15%;
+  /* width: 500px; */
+}
+
+.stylist-img-section article {
+  float: left;
+  text-align: center;
+  position: relative;
+  margin-bottom: 15%;
+}
+
+.stylist-img-section article:first-of-type,
+.stylist-img-section article:nth-child(2) {
+  margin-right: 4%;
+}
+
+.stylist-img-section img {
+  width: 300px;
+  height: 400px;
+}
+
+.stylist-img-section div {
+  background: var(--black);
+  padding: 7% 5%;
+  margin: 0 5%;
+  width: 90%;
+  color: var(--white);
+  position: absolute;
+  bottom: -15px;
+}
+
+/********************   offer-section   **********************/
+
+.offer-section {
+  clear: both;
+  padding: 15%;
+  padding-bottom: 0;
+}
+
+.offer-section article {
+  background-image: url(/img/main-2.jpg);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 7%;
+}
+
+.offer-section span {
+  font-weight: bolder;
+  margin-bottom: 2%;
+}
+
+.offer-section strong {
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.offer-section h3 {
+  font-size: 2em;
+  line-height: 1;
+  margin-bottom: 5%;
+}
+
+.offer-section a {
+  width: 25%;
+}
+
+/********************    look-book-section  **********************/
+
+.look-book-section {
+  padding: 0 15%;
+  height: 1200px;
+}
+
+.look-book-section div {
+  margin: 15%;
+  text-align: center;
+}
+
+.look-book-section hr {
+  margin: 0 47%;
+  background: var(--black);
+  font-weight: bolder;
+}
+
+.look-book-section ul {
+  position: relative;
+  margin-top: 40%;
+}
+
+.look-book-section li {
+  /* float: left; */
+  margin-bottom: 4%;
+  position: absolute;
+}
+
+.look-book-section li:first-of-type {
+  left: 0;
+  bottom: 0;
+  margin-right: 3%;
+}
+
+.look-book-section li:nth-child(2) {
+  bottom: -300px;
+  /* bottom: 0px; */
+  right: 360px;
+}
+
+.look-book-section li:nth-child(3) {
+  right: 10px;
+  bottom: 0;
+}
+
+.look-book-section li:nth-child(4) {
+  left: 0;
+  top: 0;
+  margin-right: 3%;
+}
+
+.look-book-section li:nth-child(5) {
+  right: 360px;
+  top: 300px;
+}
+
+.look-book-section li:last-of-type {
+  right: 10px;
+  top: 0;
+}
+
+.look-book-section img {
+  width: 300px;
+  height: 300px;
+}
+
+.look-book-section .longer {
+  height: 600px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+*****************************************
+
+ */
